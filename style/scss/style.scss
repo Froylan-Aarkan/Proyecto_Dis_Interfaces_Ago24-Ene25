@@ -1,0 +1,77 @@
+$font: 'inter', sans-serif;
+
+$background-color: #F1F1F1;
+$primary-color: #18529D;
+$secondary-color: #28AD56;
+$third-color: #187FAD;
+$fourth-color: #28AD99;
+$red-color: #AD2828;
+$white-color: #FFFFFF;
+$black-color: #000000;
+
+$border-radius: 5px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+    background-color: $background-color;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: $white-color;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: $white-color;
+}
+
+.login-input {
+    padding: 10px; 
+    margin: 10px 0; 
+    border: none; 
+    border-radius: $border-radius;
+    outline: none;
+    transition: box-shadow 0.1s ease;
+}
+
+.login-input:focus {
+    box-shadow: 0 0 5px 2px $third-color;
+}
+
+.login-button {
+    padding: 10px; 
+    background-color: $white-color; 
+    color: $primary-color; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: $border-radius; 
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.login-button:hover {
+    background-color: $secondary-color;
+    color: $white-color;
+}
+
+.login-link {
+    color: $white-color; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    margin-bottom: 20px; 
+    text-align: center
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}

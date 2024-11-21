@@ -1,0 +1,117 @@
+$font: 'inter', sans-serif;
+
+$background-color: #F1F1F1;
+$primary-color: #18529D;
+$secondary-color: #28AD56;
+$third-color: #187FAD;
+$fourth-color: #28AD99;
+$red-color: #AD2828;
+$neutral-color: #6C757D;
+
+$white-color: #FFFFFF;
+$black-color: #000000;
+
+$border-radius: 5px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+    background-color: $background-color;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: $white-color;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: $white-color;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    color: $white-color;
+    padding: 10px 20px;
+    position: relative;
+}
+
+header h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.logout-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 8px; 
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logout-container img {
+    height: 40px; 
+    width: 40px;
+    transition: 0.2s;
+}
+
+.logout-container span {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-container {
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-container button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: $neutral-color;
+    color: $white-color;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.1s;
+}
+
+.menu-container button img {
+    width: 50px;
+    height: 50px;
+  }
+
+.menu-container button:hover {
+    background-color: $secondary-color;
+}
