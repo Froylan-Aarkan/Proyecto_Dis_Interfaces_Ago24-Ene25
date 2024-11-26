@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sistema de tutorias</title>
+        <link rel="stylesheet" href="style/css/consultar.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="menu_principal_coordinador.html">
+              <img class="back-button" src="assets/svgs/arrow-left-square-fill.svg" alt="Regresar" style="height: 40px; width: 40px;">
+            </a>
+            <h2>Consultar Académico</h2>
+            <div>
+              <img src="assets/svgs/person-circle-white.svg" alt="Perfil" style="height: 40px; width: 40px;">
+            </div>
+        </header>
+
+        <main>
+            <div class="d-flex justify-content-center mb-3">
+                <input type="text" id="searchInput" class="form-control w-50" placeholder="Buscar por nombre o número de personal">
+            </div>
+
+            <table id="academicos" class="table table-striped table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>Número de personal</th>
+                  <th>Nombre</th>
+                  <th>Correo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12345</td>
+                  <td>Sistemas operativos</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>23451</td>
+                  <td>Diseño de Software</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>98765</td>
+                  <td>Introducción a la programación</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                    <td>98765</td>
+                    <td>Introducción a la programación</td>
+                    <td>3</td>
+                  </tr>
+                <tr>
+                    <td>98765</td>
+                    <td>Introducción a la programación</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>98765</td>
+                    <td>Introducción a la programación</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>98765</td>
+                    <td>Introducción a la programación</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>98765</td>
+                    <td>Introducción a la programación</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>98765</td>
+                    <td>Introducción a la programación</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>98765</td>
+                    <td>Introducción a la programación</td>
+                    <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <button class="consult-button">Consultar</button>
+        </main>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- DataTables JS -->
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+        <!-- Custom JS -->
+        <script>
+            $(document).ready(function () {
+              var table = $('#academicos').DataTable();
+        
+              $('#searchInput').on('keyup', function () {
+                table.search(this.value).draw();
+              });
+            });
+        </script>
+    </body>
+</html>

@@ -54,64 +54,30 @@ header h2 {
 }
 
 main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
     padding: 20px;
-}
-
-.logout-container {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    gap: 8px; 
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.logout-container img {
-    height: 40px; 
-    width: 40px;
-    transition: 0.2s;
-}
-
-.logout-container span {
-    display: inline-block;
     text-align: center;
 }
 
-.menu-container {
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.back-button {
+    transition: 0.2s;
 }
 
-.menu-container button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-color: $neutral-color;
+.back-button:hover {
+    filter: brightness(0) saturate(100%) invert(51%) sepia(71%) saturate(482%) hue-rotate(88deg) brightness(93%) contrast(86%);
+}
+
+.consult-button {
+    background-color: $primary-color;
     color: $white-color;
-    font-size: 16px;
-    font-weight: 500;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    border-radius: $border-radius;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: 500;
     cursor: pointer;
-    text-align: left;
-    transition: 0.1s;
+    transition: background-color 0.2s ease;
 }
 
-.menu-container button img {
-    width: 50px;
-    height: 50px;
-}
-
-.menu-container button:hover{
+.consult-button:hover {
     background-color: $secondary-color;
 }
