@@ -21,6 +21,12 @@ h2 {
   color: #FFFFFF;
 }
 
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -29,6 +35,7 @@ header {
   color: #FFFFFF;
   padding: 10px 20px;
   position: relative;
+  width: 100%;
 }
 
 header h2 {
@@ -41,6 +48,11 @@ header h2 {
 main {
   padding: 20px;
   text-align: center;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
 .back-button {
