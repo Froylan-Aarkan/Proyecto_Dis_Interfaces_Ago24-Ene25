@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "inter", sans-serif;
+    background-color: #F1F1F1;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #18529D;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+}
+
+header h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.back-button {
+    transition: 0.2s;
+}
+
+.back-button:hover {
+    filter: brightness(0) saturate(100%) invert(51%) sepia(71%) saturate(482%) hue-rotate(88deg) brightness(93%) contrast(86%);
+}
+
+.consult-button {
+    background-color: #18529d;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.consult-button:hover {
+    background-color: #28AD56;
+}
+
+#hora-inicio, #hora-fin {
+    font-size: 14px; 
+    padding: 5px 10px; 
+    height: 30px; 
+    width: 100%;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da; 
+    border-radius: 4px;
+    text-align: center;
+}
+
+.row .col-md-6 {
+    padding-right: 15px;
+    padding-left: 15px; 
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.col-md-4.d-flex {
+    display: flex;
+    align-items: center; 
+}
+
+.form-check {
+    margin-left: 10px;  
+    margin-top: 25px; 
+}
+
+.form-check-input {
+    transform: scale(1.3); 
+}
+
+.form-check-label {
+    font-size: 18px; 
+    margin-left: 10px;
+}
+
+.btn-green, .btn-red {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    min-width: 180px; 
+    white-space: nowrap; 
+}
+
+.btn-green {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-green:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+.btn-red {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-red:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+}
+
+button i {
+    font-size: 20px;
+    margin-right: 4px; 
+}

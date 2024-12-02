@@ -90,6 +90,7 @@ main {
   cursor: pointer;
   text-align: left;
   transition: 0.1s;
+  width: 100%;
 }
 
 .menu-container button img {
@@ -99,6 +100,10 @@ main {
 
 .menu-container button:hover {
   background-color: #28AD56;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=menuprincipal.css.map */
