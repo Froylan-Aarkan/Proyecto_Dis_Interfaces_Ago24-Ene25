@@ -56,12 +56,12 @@
                 <!-- Column 6 -->
                 <div class="col-md-4">
                     <label for="alumnos-asistieron" class="form-label text-start d-block">No. de alumnos que asistieron</label>
-                    <input type="text" id="alumnos-asistieron" class="form-control mb-3" value="10" disabled>
+                    <input type="text" id="alumnos-asistieron" class="form-control mb-3" value="">
                 </div>
                 <!-- Column 7 -->
                 <div class="col-md-4">
                     <label for="alumnos-riesgo" class="form-label text-start d-block">No. de alumnos en riesgo</label>
-                    <input type="text" id="alumnos-riesgo" class="form-control mb-3" value="0" disabled>
+                    <input type="text" id="alumnos-riesgo" class="form-control mb-3" value="">
                 </div>
                 <!-- Column 8 -->
                 <div class="col-md-4 d-flex align-items-center">
@@ -77,36 +77,36 @@
                 <!-- Column 9 -->
                 <div class="col-md-4">
                     <label for="experiencia-educativa" class="form-label text-start d-block">Experiencia Educativa</label>
-                    <input type="text" id="experiencia-educativa" class="form-control mb-3" value="Paradigmas de programación" disabled>
+                    <input type="text" id="experiencia-educativa" class="form-control mb-3 problema-experiencia" value="" disabled>
                 </div>
                 <!-- Column 10 -->
                 <div class="col-md-4">
-                    <label for="profesor" class="form-label text-start d-block">Profesor</label>
-                    <input type="text" id="profesor" class="form-control mb-3" value="Juan Pérez Pérez" disabled>
+                    <label for="academico" class="form-label text-start d-block">Profesor</label>
+                    <input type="text" id="academico" class="form-control mb-3 problema-academico" value="" disabled>
                 </div>
                 <!-- Column 11 -->
                 <div class="col-md-4">
                     <label for="numero-alumnos" class="form-label text-start d-block">No. de alumnos</label>
-                    <input type="text" id="numero-alumnos" class="form-control mb-3" value="3" disabled>
+                    <input type="text" id="numero-alumnos" class="form-control mb-3 problema-alumnos" value="" disabled>
                 </div>
             </div>
 
             <div class="row mb-4">
                 <div class="col-md-12">
                     <label for="problema" class="form-label text-start d-block">Problema</label>
-                    <textarea id="problema" class="form-control mb-3" rows="5" placeholder="Escribe la problematica aquí..."></textarea>
+                    <textarea id="problema" class="form-control mb-3 problema" rows="5" placeholder="Escribe la problematica aquí..." disabled></textarea>
                 </div>
             </div>
 
             <div class="row align-items-center">
                 <div class="col-md-6 d-flex justify-content-start">
-                    <button class="btn-green">
-                        <i class="bi bi-plus"></i>Agregar Problema
+                    <button class="btn btn-success" id="agregar-problema" disabled>
+                        + Agregar Problema
                     </button>
                 </div>
                 <div class="col-md-6 d-flex justify-content-end">
-                    <button class="btn-red">
-                        <i class="bi bi-dash"></i>Quitar Problema
+                    <button class="btn btn-danger" id="quitar-problema" disabled>
+                        - Quitar Problema
                     </button>
                 </div>
             </div>
@@ -126,8 +126,10 @@
             </div>
 
             <div class="text-center" style="margin-top: 20px;"> 
-                <button class="consult-button">Registrar</button>
+                <button class="consult-button" id="registrar">Registrar</button>
             </div>
           </main>
+
+          <script src="js/registrar_reporte_tutoria.js"></script>
     </body>
 </html>
